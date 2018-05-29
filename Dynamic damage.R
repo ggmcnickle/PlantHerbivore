@@ -151,9 +151,10 @@ lnRR.yield<-log(yield/yield.alone)
 treat = rep("Shoot herbivore", length(Root))
 
 out2<-data.frame(treat, N, Root, Shoot, herb, yield, Root.alone, Shoot.alone, yield.alone, damage, lnRR.root, lnRR.shoot, lnRR.yield)
-write.csv(out, "C:/Users/gmcnickle/Desktop/out.shoot.herb.csv") 
 
+#####################
 #Root damage
+######################
 
 plant.game<-function(u) {
 		with (as.list(params),	{
@@ -295,11 +296,13 @@ lnRR.yield<-log(yield/yield.alone)
 treat = rep("Root herbivore", length(Root))
 
 out<-data.frame(treat, N, Root, Shoot, herb, yield, Root.alone, Shoot.alone, yield.alone, damage, lnRR.root, lnRR.shoot, lnRR.yield)
-write.csv(out, "C:/Users/gmcnickle/Desktop/out.root.herb.csv") 
 
 out=rbind(out, out2)
 
+################
 #plot results
+##################
+
 library(ggplot2); library(gridExtra)
 
 a<-ggplot(out, aes(N, lnRR.yield, colour=treat)) + geom_line() +
