@@ -3,6 +3,10 @@
 #Purdue University
 #gmcnickle@purdue.edu
 #rm(list=ls(all=TRUE))
+
+#Code for Fig 1 A,B,C in McNickle and Evans 2018. AoB Plants. 
+
+
 library(scatterplot3d)
 library(rootSolve)
 graphics.off()
