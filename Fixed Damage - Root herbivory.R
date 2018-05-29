@@ -2,6 +2,9 @@
 #Department of Botany and Plant Pathology
 #Purdue University
 #gmcnickle@purdue.edu
+
+#Code for Fig 1 D,E,F in McNickle and Evans 2018. AoB Plants. 
+
 rm(list=ls(all=TRUE))
 library(scatterplot3d)
 library(rootSolve)
