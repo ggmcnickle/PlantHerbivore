@@ -161,9 +161,11 @@ pred_lnRR.root<-log(gameoff.root/Root.alone)
 
 out<-data.frame(d.vec, Root, Shoot, herb, yield, Root.alone, Shoot.alone, yield.alone, 
 	damage, lnRR.root, lnRR.shoot, lnRR.yield, Rn.vec, gameoff.root, pred_lnRR.root)
-write.csv(out, "C:/Users/gmcnickle/Desktop/out.root.herb.csv") 
 
+################
 #plot results
+#################
+
 library(ggplot2); library(gridExtra)
 
 a1<-ggplot(out, aes(damage, lnRR.yield, colour=Rn.vec)) + geom_point() +
