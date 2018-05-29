@@ -1,6 +1,6 @@
 library(ggplot2); library(gridExtra); library(lsmeans)
 
-wes<-read.csv("U:\\Pudue Files\\Manuscripts\\02 ACCEPTED\\Root Shoot game + herbivore\\Wes Herbiovry\\wesHerbivory2.csv")
+wes<-read.csv("data.csv")
 
 ###
 #Figure 3 in McNickle and Evans 2018, AoB Plants. 
