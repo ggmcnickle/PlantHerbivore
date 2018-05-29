@@ -1,7 +1,7 @@
-#Gordon G. McNickle, Joel S Brown, Doug Lynch 2012
-#Department of Biological Sciences
-#University of Illinois at CHicago
-#mcnickle@uic.edu
+#Gordon G. McNickle, Wesley Evans
+#Department of Botany and Plant Pathology
+#Purdue University
+#gmcnickle@purdue.edu
 rm(list=ls(all=TRUE))
 library(scatterplot3d)
 library(rootSolve)
